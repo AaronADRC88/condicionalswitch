@@ -1,11 +1,17 @@
 
 package condicionalswitch;
 
+import java.util.Scanner;
+
 public class Condicionalswitch {
 
     public static void main(String[] args) {
-    String opcion ="un";
-    switch(opcion){
+       Scanner op=new Scanner(System.in);
+       
+        System.out.println("****MENU****");
+        System.out.println("**UN-> escribe un un\n**DOUS-> escribe un dous\n**TRES-> escribe un tres\n**Elixe opcion");
+        String opcion=op.nextLine();
+        switch(opcion){
         case "un": System.out.println("un");
             break;
         case "dous": System.out.println("dous");
